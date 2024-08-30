@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block titutlo%} GamingHub {% endblock %}
+
+{%block contenido%}
+<table align="center">
+    {% for producto in productos %}
+    <tr>
+        <td>{{ producto.marca }}</td>
+        <td><a href="/producto/{{producto.id}}">{{ producto.nombre }}</a></td>
+        <td style="text-align:right"> ${{ "{:,}".format(producto.precio)}} USD </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
