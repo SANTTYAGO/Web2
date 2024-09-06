@@ -44,5 +44,5 @@ Este proyecto es una aplicación web de tienda en línea desarrollada con **Flas
 3. Asegúrate de que los datos de la base de datos están configurados correctamente en `Web2.sqlite3`. Si es necesario, puedes ejecutar el script `datos.py` para crear e insertar los productos.
 4. Ejecuta la aplicación:
    ```bash
-   python app.py
+   python main.py
    ```
